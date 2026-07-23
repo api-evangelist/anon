@@ -1,8 +1,25 @@
 aid: anon
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/anon.png
 name: Anon
-description: 'Anon is a company surfaced as a portfolio company of forerunner-ventures, union-square-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: infrastructure. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'Anon is an enterprise AI agent platform that builds production-ready AI
+  agents for companies. Its offerings include computer-use agents that automate long-running
+  browser workflows, hosted web agents that perform tasks across multiple systems, and an
+  agent authentication toolkit that gives developers tools to authenticate agents across
+  third-party services. Originally positioned as an automated authentication layer for the
+  gen-AI age, Anon has raised $14M from Forerunner Ventures, Union Square Ventures, and
+  Abstract Ventures. As of this profile the company does not publish a public self-serve API,
+  SDK, developer portal, or MCP server; engagements are handled directly (hello@anon.com).'
 url: https://raw.githubusercontent.com/api-evangelist/anon/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -17,6 +34,12 @@ modified: '2026-07-17'
 tags:
 - Company
 - Infrastructure
+- AI Agents
+- Agent Authentication
+- Browser Automation
+- Computer Use
+- Automation
+- Developer Tools
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/anon-domain-security.yml
 - type: Website
   url: https://anon.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
